@@ -4,6 +4,9 @@
 <head>
 <%@ include file="/WEB-INF/include/include-header.jspf" %>
 <script type="text/javascript">
+	
+	var gfv_count = 1;
+
     $(document).ready(function(){
     	$("#list").on("click", function(e){ //목록으로 버튼
             e.preventDefault();
@@ -36,6 +39,19 @@
         var comSubmit = new ComSubmit("frm");
         comSubmit.setUrl("<c:url value='/sample/insertBoard.do' />");
         comSubmit.submit();
+    }
+    
+    function fn_addFile(){
+        var str = "<p><input type='file' name='file_"+(gfv_count++)+"'><a href='#this' class='btn' name='delete'>삭제</a></p>";
+        $("#fileDiv").append(str);
+        $("a[name='delete']").on("click", function(e){ //삭제 버튼
+            e.preventDefault();
+            fn_deleteFile($(this));
+        });
+    }
+    
+    function fn_deleteFile(obj){
+        obj.parent().remove();
     }
 </script>
 </head>
