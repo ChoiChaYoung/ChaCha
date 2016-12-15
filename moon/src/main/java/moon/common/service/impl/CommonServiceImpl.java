@@ -1,5 +1,6 @@
 package moon.common.service.impl;
 
+import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
@@ -21,6 +22,12 @@ public class CommonServiceImpl implements CommonService{
 	public Map<String, Object> selectFileInfo(Map<String, Object> map) throws Exception {
 		return commonDAO.selectFileInfo(map);
 	}
+
+	@Override
+	public List<Map<String, Object>> selectMenuList(Map<String, Object> map) throws Exception {
+		return commonDAO.selectMenuList(map);
+	}
     
+	
     
 }

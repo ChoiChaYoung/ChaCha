@@ -3,6 +3,7 @@
 <html lang="ko">
 <head>
 <%@ include file="/WEB-INF/include/include-header.jspf" %>
+<%@ include file="/WEB-INF/include/include-topmenu.jspf" %>
 <script type="text/javascript">
     $(document).ready(function(){
         $("#write").on("click", function(e){ //글쓰기 버튼
