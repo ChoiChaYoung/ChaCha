@@ -9,5 +9,5 @@ public interface MenuService {
 	/**
 	 * 메뉴 리스트
 	 * */
-	List<Map<String, Object>> selectMenuList(CommandMap commandMap) throws Exception;
+	List<Map<String, Object>> selectMenuList(Map<String, Object> map) throws Exception;
 }

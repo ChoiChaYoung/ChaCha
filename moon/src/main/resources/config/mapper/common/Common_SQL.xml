@@ -13,12 +13,4 @@
 	            IDX = #{IDX}
 	    ]]>
 	</select>
-	
-	<select id="selectMenuList" parameterType="hashmap" resultType="hashmap">
-	    <![CDATA[
-	        SELECT *
-	          FROM TB_MENU
-	         WHERE USE_YN = 'Y'
-	    ]]>
-	</select>
 </mapper>

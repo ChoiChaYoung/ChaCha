@@ -12,6 +12,6 @@ public class MenuDAO extends AbstractDAO{
 	
 	@SuppressWarnings("unchecked")
 	public List<Map<String, Object>> selectMenuList(Map<String, Object> map) throws Exception{
-		return (List<Map<String, Object>>)selectList("common.selectMenuList", map);
+		return (List<Map<String, Object>>)selectList("main.selectMenuList", map);
 	}
 }

@@ -23,12 +23,6 @@ public class MenuServiceImpl implements MenuService{
 		return menuDAO.selectMenuList(map);
 	}
 
-	@Override
-	public List<Map<String, Object>> selectMenuList(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 	
 	
     
