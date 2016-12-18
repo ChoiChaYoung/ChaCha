@@ -8,7 +8,6 @@ import javax.annotation.Resource;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
-import moon.common.common.CommandMap;
 import moon.common.menu.dao.MenuDAO;
 import moon.common.menu.service.MenuService;
 
@@ -22,14 +21,5 @@ public class MenuServiceImpl implements MenuService{
 	public List<Map<String, Object>> selectMenuList(Map<String, Object> map) throws Exception {
 		return menuDAO.selectMenuList(map);
 	}
-
-	@Override
-	public List<Map<String, Object>> selectMenuList(CommandMap commandMap) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	
-	
     
 }

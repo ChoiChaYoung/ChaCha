@@ -24,9 +24,9 @@ public class MenuController {
     
     @RequestMapping(value="/selectMenuList.do")
     public ModelAndView retrieveMenuList(CommandMap commandMap) throws Exception{
-        ModelAndView mv = new ModelAndView("/common/boardDetail");
+        ModelAndView mv = new ModelAndView("/common/menu/menu");
          
-        List<Map<String, Object>> list = menuService.selectMenuList(commandMap);
+        List<Map<String, Object>> list = menuService.selectMenuList(commandMap.getMap());
         mv.addObject("list", list);
         
         return mv;

@@ -15,9 +15,9 @@
     <!-- 오라클 설정 -->
     <bean id="dataSourceSpied" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
-        <property name="url" value="jdbc:oracle:thin:@localhost:1521:oraDB"/>
-        <property name="username" value="cha"/>
-        <property name="password" value="cha"/>
+        <property name="url" value="jdbc:oracle:thin:@localhost:1522:orcl"/>
+        <property name="username" value="C##CHA"/>
+        <property name="password" value="Z07855168"/>
     </bean>
     
     <bean id="dataSource" class="net.sf.log4jdbc.Log4jdbcProxyDataSource">

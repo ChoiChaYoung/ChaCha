@@ -3,7 +3,7 @@
 <html lang="ko">
 <head>
 <%@ include file="/WEB-INF/include/include-header.jspf" %>
-<%@ include file="/WEB-INF/include/include-topmenu.jspf" %>
+
 <script type="text/javascript">
     $(document).ready(function(){
         $("#write").on("click", function(e){ //글쓰기 버튼
@@ -33,6 +33,7 @@
 </script>
 </head>
 <body>
+<jsp:include page="/WEB-INF/jsp/common/menu/menu.jsp" flush="false"/>
     <h2>게시판 목록</h2>
 	<table class="board_list">
 		<colgroup>
