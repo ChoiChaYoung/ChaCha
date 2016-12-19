@@ -11,6 +11,7 @@
 </script>
 </head>
 <body>
+
     <div align="center" style="height: 200px; padding-top: 100px">
 	    <a href="/moon/sample/openBoardList.do" class="btn" id="btnMain" style="padding: 50px">GO!!!</a>
 	</div>
